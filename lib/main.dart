@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
     return BlocProvider(
       create: (context) => AuthCubit(sl<AuthRepository>()),
       child: MaterialApp(
-        // theme: AppThemes().lightTheme,
-        theme: AppThemes().darkTheme,
+        theme: AppThemes().lightTheme,
+        //theme: AppThemes().darkTheme,
         title: 'PLANIT',
         debugShowCheckedModeBanner: false,
         home: BlocBuilder<AuthCubit, AuthState>(

@@ -1,4 +1,5 @@
 import 'package:ems_1/core/themes/app_themes.dart';
+import 'package:ems_1/features/home/presentation/screens/AddEventScreen.dart';
 import 'package:ems_1/features/home/presentation/screens/user_home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
@@ -24,6 +25,7 @@ class _UserScreensState extends State<UserScreens> {
   final List<Widget> _screens = [
     UserHomeScreen(),
     Calendarscreen(),
+    Addeventscreen(),
     Favoritescreen(),
     Settingsscreen(),
   ];
@@ -42,15 +44,17 @@ class _UserScreensState extends State<UserScreens> {
         size: 30,
         color: _selectedIndex == 1 ? _activeColor : _inActiveColor,
       ),
+      Icon(Icons.add_circle,
+          size: 40, color: _selectedIndex == 2 ? _activeColor : _inActiveColor),
       Icon(
         Icons.favorite_outline,
         size: 30,
-        color: _selectedIndex == 2 ? _activeColor : _inActiveColor,
+        color: _selectedIndex == 3 ? _activeColor : _inActiveColor,
       ),
       Icon(
         Icons.settings_outlined,
         size: 30,
-        color: _selectedIndex == 3 ? _activeColor : _inActiveColor,
+        color: _selectedIndex == 4 ? _activeColor : _inActiveColor,
       ),
     ];
 

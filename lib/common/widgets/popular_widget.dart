@@ -31,7 +31,7 @@ class PopularWidget extends StatelessWidget {
                 },
                 child: Text(
                   'view all→',
-                  style: TextStyle(color: Color(0xFF50C878), fontSize: 20),
+                  style: TextStyle(color: Color(0xFF50C878), fontSize: 18),
                 ),
               ),
             ],

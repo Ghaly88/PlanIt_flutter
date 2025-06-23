@@ -1,11 +1,18 @@
 import 'package:ems_1/common/widgets/custom_search_bar.dart';
 import 'package:ems_1/common/widgets/invitefreinds.dart';
 import 'package:ems_1/common/widgets/popular_widget.dart';
+import 'package:ems_1/common/widgets/upoffers.dart';
 import 'package:ems_1/features/home/data/models/event_card_model.dart';
+import 'package:ems_1/features/home/data/models/offer_model.dart';
 import 'package:flutter/material.dart';
 
 class UserHomeScreen extends StatelessWidget {
   UserHomeScreen({super.key});
+  final List<OfferModel> offlist = [
+    OfferModel(img: "assets/images/offer1.jpeg"),
+    OfferModel(img: "assets/images/offer2.jpeg"),
+    OfferModel(img: "assets/images/offer2.jpeg"),
+  ];
   final List<EventCardModel> dummyList = [
     EventCardModel(
       imageUrl:
@@ -46,8 +53,9 @@ class UserHomeScreen extends StatelessWidget {
     return SafeArea(
       child: Stack(
         children: [
+          Upoffers(offList: offlist),
           Padding(
-            padding: const EdgeInsets.only(top: 80),
+            padding: const EdgeInsets.only(top: 220),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10.0),
               child: ListView(

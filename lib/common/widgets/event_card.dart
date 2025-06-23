@@ -68,14 +68,14 @@ class EventCard extends StatelessWidget {
                   style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
-                      color: Colors.black87),
+                      color: Color(0xff206173)),
                 ),
                 Text(
                   eventCardModel.date.substring(3),
                   style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
-                      color: Colors.black87),
+                      color: Color(0xff206173)),
                 ),
               ],
             ),
@@ -87,14 +87,17 @@ class EventCard extends StatelessWidget {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(15),
             child: BackdropFilter(
-              filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+              filter: ImageFilter.blur(sigmaX: 2, sigmaY: 2),
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withOpacity(0.1),
                 ),
                 child: IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.favorite_border_outlined)),
+                    icon: Icon(
+                      Icons.favorite_border_outlined,
+                      color: Color(0xffD99A9A),
+                    )),
               ),
             ),
           ),

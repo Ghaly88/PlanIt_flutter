@@ -15,7 +15,7 @@ class Invitefreinds extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          Positioned(left: 100, child: Image.asset('assets/gifts.png')),
+          Positioned(left: 100, child: Image.asset('assets/images/gifts.png')),
           Padding(
             padding: const EdgeInsets.fromLTRB(15, 20, 0, 0),
             child: Column(
